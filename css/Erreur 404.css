@@ -1,0 +1,133 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: red;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 2.5%;
+}
+
+.box-msg {
+  background: rgba(255, 0, 0, 0.220);
+  margin: 50px 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  min-height: 200px;
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 700px;
+}
+
+.box-msg .img-404 {
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+
+.box-msg h2 {
+  color: rgb(255, 123, 0);
+  margin-left: 240px;
+}
+
+.box-msg h4 {
+  color: #005a9c;
+  text-decoration: underline;
+  margin-left: 210px;
+}
+
+.box-msg ul {
+  color: #005a9c;
+  margin-left: 230px;
+  margin-top: 4px;
+  font-size: 0.85em;
+}
+
+.box-home {
+  border: none;
+  border-radius: 50px;
+  outline: 1px solid #005a9c;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  background: #005a9c;
+  padding: 7.5px 9px;
+}
+
+.box-home .img-home {
+  height: 35px;
+  width: 35px;
+  filter: invert(100%);
+  margin-right: 7.5px;
+}
+
+.box-home a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.box-home:hover a {
+  color: #fff;
+  font-size: 1.05em;
+  text-decoration: underline;
+  transition: 0.1s;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.2em;
+    margin-top: 1.75%;
+  }
+  .box-msg {
+    margin: 30px 0 20px 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /* min-height: 200px; */
+    padding: 17.5px;
+    width: 90%;
+  }
+  .box-msg .img-404 {
+    height: 150px;
+    width: 150px;
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .box-msg h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .box-msg h4 {
+    color: #005a9c;
+    text-decoration: underline;
+    margin-left: 10px;
+  }
+  .box-msg ul {
+    color: #005a9c;
+    margin-left: 40px;
+    margin-top: 4px;
+    font-size: 0.85em;
+  }
+  .box-home {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}

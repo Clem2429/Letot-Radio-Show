@@ -1,0 +1,150 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.profil {
+    background-color: #005a9c;
+    width: 35%;
+    color: #fff;
+    position: relative;
+    left: 35%;
+    margin-top: 100px;
+    transform: translate(-35%);
+    box-shadow: 3px 3px 7px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.profil h1 {
+    text-align: center;
+}
+
+.profil img {
+    outline: 0.2px solid white;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.profil hr {
+    width: 80%;
+    background-color: #fff;
+    border: 1px solid white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.profil p {
+    padding-left: 15px;
+}
+
+.profil .block-description {
+    background-color: #fff;
+    color: #005a9c;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 87.5%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+aside {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    width: 31%;
+    outline: 1px solid #005a9c;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+aside h2 {
+    background: #005a9c;
+    color: #fff;
+    text-align: center;
+}
+
+aside ul li {
+    list-style: none;
+    padding: 7px 0 5px 12.5px;
+    display: flex;
+}
+
+aside ul :is(li:nth-last-child(2), li:nth-last-child(4), li:nth-last-child(6)) {
+    background-color: rgba(0, 91, 156, 0.22);
+}
+
+aside ul li:nth-last-child(1) {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+aside ul li {
+    background-color: rgba(0, 91, 156, 0.1);
+}
+
+aside ul li a {
+    color: #005a9c;
+    width: 100%;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+
+.profile-actions {
+    width: 20%;
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    outline: 1px solid #005a9c;
+}
+
+.profile-actions h2{
+    background: #005a9c;
+    color: #fff;
+    text-align: center;
+}
+
+.profile-actions a {
+    font-size: 1.05em;
+    padding: 7px 15px;
+}
+
+.link-house {
+    color: #fff;
+    padding: 10px;
+    font-size: 1.1em;
+    background: #005a9c;
+}
+
+@media screen and (max-width: 800px) {
+    .profil {
+        width: 90%;  
+        margin-top: 30px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .profil p {
+        padding-left: 5px;
+    }
+    .profil .block-description {
+        width: 90%;
+    }
+    aside {
+        width: 90%;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}

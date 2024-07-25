@@ -1,0 +1,88 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    outline: 1px solid #005a9c;
+    border: none;
+    border-radius: 20px;
+    width: auto;
+    max-width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 120px;
+    box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+    color: #005a9c;
+    padding: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+form h2 {
+    line-height: 2em;
+}
+
+form :is(input[type=text], input[type=password]) {
+    border: 1.4px solid #005a9c;
+    border-radius: 10px;
+    padding: 8px 12.5px;
+    width: 70%;
+}
+
+form :is(input[type=text], input[type=password]):focus {
+    outline: none;
+    border: 1.5px solid #005a9c;
+}
+
+form input[type=submit] {
+    padding: 12px;
+    color: #fff;
+    background-color: #005a9c;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 15px;
+    width: 60%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+form input[type=submit]:hover {
+    color: #005a9c;
+    background-color: #fff;
+    font-size: 1.2em;
+    border-radius: 50px;
+    outline: 1px solid #005a9c;
+    transition: 0.2s;
+}
+
+form a {
+    color: orange;
+}
+
+form .info {
+    color: red;
+    font-size: 1em;
+    text-align: justify;
+}
+
+form .info-label {
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        width: 90%;
+        max-width: 100%;
+        margin: 75px 0;
+    }
+    form :is(input[type=text], input[type=password]) {
+        width: 85%;
+    }
+}

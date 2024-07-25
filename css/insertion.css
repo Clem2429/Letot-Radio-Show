@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    color: #005a9c;
+}
+
+form {
+    width: 50%;
+    margin-top: 50px;;
+    position: relative;
+    left: 2.5%;
+    background-color: #005a9c;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    color: #fff!important;
+}
+
+form * {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    color: #005a9c;
+    outline: none;
+    padding: 5px;
+}
+
+
+textarea {
+    height: 100px;
+    border: 1.5px solid #005a9c;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.dashboard-go {
+    position: absolute;
+    right: 5%;
+    width: 40%;
+    padding: 7.5px;
+    background-color:#005a9c;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    margin-top: 75px;
+    cursor: pointer;
+}
+
+.warning-admin-two {
+    background-color: #FFF4E8;
+    color: orange;
+    font-size: 1.1em;
+    position: absolute;
+    max-width: 45%;
+    bottom: 0;
+    right: 1%;
+    padding: 5px 15px 10px 15px;
+}
+
+.warning-admin-two h2 {
+    text-align: center;
+    color: orange;
+}
+

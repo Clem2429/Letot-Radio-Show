@@ -1,0 +1,99 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.red-box {
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+.title_case {
+    color: red;
+    font-size: 2.5em;
+    /* border-bottom: 1px solid red; */
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+hr {
+    background-color: red;
+    border: 1px solid red;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.info_case {
+    color: red;
+    padding: 10px 25px 0px 25px;
+    font-size: 1.2em;
+}
+
+.home_case {
+    padding: 0px 0px 20px 0px;
+}
+.home_case button {
+    background-color: #fff;
+    color: red;
+    font-size: 1em;
+    padding: 10px;
+    position: relative;
+    left: 60%;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2);
+    transition: 0.3s;
+}
+
+.home_case button:hover {
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+
+.button_admin {
+    background-color: #fff;
+    color: red;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 7.5px 15px;
+    box-shadow: 2px 2px 2px 2px rgba(0.2, 0.2, 0.2, 0.2);
+    border: none;
+    outline: 1px solid red;
+    margin-top: 50px;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button_admin:hover {
+    background-color: red;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 7.5px 15px;
+    box-shadow: 4px 4px 4px 4px rgba(0.2, 0.2, 0.2, 0.2);
+    border: none;
+    outline: 1px solid red;
+    margin-top: 50px;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    cursor: pointer;
+    transition: 0.2s;
+}

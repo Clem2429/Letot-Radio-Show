@@ -1,0 +1,214 @@
+HTML
+
+<section class="countdown-section">
+    <div style="background-image: url('img/dday_picture.png'); background-size: cover;" class="countdown-box">
+        
+        <h2 class="timer"></h2>
+        <div class="timer-words">
+            <span class="days words-timer">Jours</span>
+            <span class="hours words-timer">Heures</span>
+            <span class="minutes words-timer">Minutes</span>
+            <span class="seconds words-timer">Secondes</span>
+        </div>
+        <div class="box_emi">
+            <p class="text_emi">À cette occasion, nous vous proposons d'écouter nos émissions sur le Débarquement :</p>
+            <br><br>
+            <div class="box_emi_buttons">
+                <a href="https://podeduc.apps.education.fr/video/40670-edition-speciale-de-lemission-tekitoi-noubliez-jamais-le-sergent-chef-louis-ricardou-1910-1944-compagnon-de-la-liberation/"><button>Louis Ricardou</button></a>
+                <a href="https://podeduc.apps.education.fr/video/33033-emission-decembre-resister-sevader-mp3/"><button>Résister, S'évader</button></a>
+                <a href="https://pod.ac-normandie.fr/video/47674-5-juin-1944-lrsmp3/"><button>Le D-Day</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+CSS 
+
+.countdown_section {
+}
+
+.countdown-box {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 550px;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 35px;
+
+}
+
+.image-countdown {
+}
+
+.timer {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    font-size: 4em;
+    word-spacing: 1.2em;
+    color: #FFF;
+
+}
+
+.timer-words {
+    position: relative;
+    top: 26%;
+    text-align: center;
+}
+
+.words-timer { 
+    /* padding: 0px 45px 0px 55px;
+    font-size: 1.1em;
+    color: #FFF;
+    font-weight: bold; */
+    display: none;
+}
+
+.box_emi {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.09);
+    width: 80%;
+    padding: 0px 25px 15px 25px;
+    border-radius: 15px;
+}
+
+.text_emi {
+    color: #FFF;
+    line-height: 3em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.box_emi_buttons {
+    
+}
+
+.box_emi_buttons button {
+    position: relative;
+    left: 40%;
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 10px;
+    border: none;
+    color: #005a9c;
+    background-color: #FFF;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: ease 0.3s;
+}
+
+.box_emi_buttons button:hover {
+    background-color: #005a9c;
+    color: #FFF;
+    font-size: 1.1em;
+    transition: ease-in-out 0.3s;
+    text-decoration: underline;
+}  
+
+@media screen and (max-width: 800px) {
+    .countdown-box {
+        height: 350px;
+        margin: 30px 0;
+        border-radius: 20px;
+    }
+    .timer {
+        font-size: 2.5em;
+        top: 10%;
+        word-spacing: 0.6em;
+    }
+    .words-timer {
+        display: none;
+    }
+    .box_emi {
+        top: 15%;
+        width: 90%;
+        border-radius: 10px;
+        padding: 5px 10px 10px 12.5px;
+    }
+    .text_emi {
+        font-size: 1em;
+        line-height: 1em;
+    }
+    .box_emi_buttons button {
+        left: 50%;
+        transform: translate(-50%);
+        padding: 7.5px;
+        font-size: 1em;
+        margin-bottom: 5px;
+        display: block;
+    }
+    }
+
+    @media screen and (max-width: 400px) {
+        .countdown-box {
+            height: 350px;
+            margin: 30px 0;
+            border-radius: 20px;
+        }
+        .timer {
+            font-size: 2em;
+            top: 8%;
+            word-spacing: 0.4em;
+        }
+        .words-timer {
+            display: none;
+        }
+        .box_emi {
+            top: 12%;
+            width: 90%;
+            border-radius: 10px;
+            padding: 5px 10px 10px 12.5px;
+        }
+        .text_emi {
+            font-size: 1em;
+            line-height: 1em;
+        }
+        .box_emi_buttons button {
+            left: 50%;
+            transform: translate(-50%);
+            padding: 7.5px;
+            font-size: 1em;
+            margin-bottom: 5px;
+            display: block;
+        }
+        }
+
+JS
+
+const text = document.querySelector("h2");
+const countdownDate = new Date("June 6, 06:30:00");
+function getChrono() {
+  const now = new Date();
+  const distanceBase = countdownDate - now;
+  const days = Math.floor(distanceBase / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distanceBase % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((distanceBase % (1000 * 60 * 60)) / (1000 * 60));
+  const secondes = Math.floor((distanceBase % (1000 * 60)) / 1000);
+
+  const formattedDays = days.toString().padStart(2, "0");
+  const formattedHours = hours.toString().padStart(2, "0");
+  const formattedMinutes = minutes.toString().padStart(2, "0");
+  const formattedSeconds = secondes.toString().padStart(2, "0");
+
+  let pluralDays = days === 0 || days === 1 ? "" : "";
+  let pluralHours = hours === 0 || hours === 1 ? "" : "";
+  let pluralMinutes = minutes === 0 || minutes === 1 ? "" : "";
+  let pluralSeconds = secondes === 0 || secondes === 1 ? "" : "" ;
+
+  text.innerText = `${formattedDays} ${pluralDays} ${formattedHours} ${pluralHours} ${formattedMinutes} ${pluralMinutes} ${formattedSeconds} ${pluralSeconds}`;
+  if (days <= 0 && hours <= 0 && minutes <= 0 && secondes <= 0) {
+    clearInterval(countDownInterval);
+    text.innerText = "Today, is D-Day";
+  }
+}
+
+const countDownInterval = setInterval(getChrono, 1000);

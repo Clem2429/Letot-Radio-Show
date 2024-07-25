@@ -1,0 +1,165 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    height: auto;
+    width: 300px;
+    border-right: 1.5px solid #005a9c;
+    color: #005a9c;
+}
+
+main {
+    margin-left: 300px;
+}
+nav h1 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 65px;
+    line-height: 2em;
+}
+
+nav .link-home {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    cursor: pointer;
+}
+
+nav .link-home:hover {
+    background-color: #005a9c;
+}
+
+nav .link-home:hover a {
+    color: #fff;
+    font-size: 1.4em;
+}
+
+nav .link-home a {
+    color: #005a9c;
+    font-size: 1.35em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav details {
+    color: #005a9c;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+}
+
+nav details summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav details .summary-to-open::after {
+    content: "▼";
+    position: absolute;
+    right: 3.5%;
+    display: inline-block;
+    transition: 0.4s;
+}
+
+ nav details[open] .summary-to-open::after {
+    transform: rotate(360deg);
+    content: "▲";
+    display: inline-block;
+    transition: 0.4s;
+}
+
+nav details .summary-to-open {
+    font-size: 1.35em;
+    padding: 7.5px 0px;
+    font-weight: bold;
+}
+
+nav details .summary-to-open:hover {
+    /* text-decoration: underline; */
+    font-size: 1.4em;
+}
+nav details .summary-link-case {
+    font-size: 1.15em;
+    padding: 7.5px 17.5px;
+}
+
+nav details .summary-link-case:hover {
+    background-color: #005a9c;
+}
+
+nav details .summary-link-case:hover a {
+    color: #fff;
+}
+
+nav details summary a {
+    text-decoration: none;
+    color: #005a9c;
+}
+
+nav .connected-name {
+    text-align: right;
+    font-size: 1.1em;
+}
+
+nav .logout-button {
+    background-color: rgba(255, 0, 0, 0.75);
+    color: #FFF4E8;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 80%;
+    margin: 0 25px;
+    transition: 0.2s;
+}
+
+nav .logout-button:hover {
+    color: red;
+    background-color: #fff;
+    border-radius: 50px;
+    outline: 1px solid red;
+    transition: 0.2s;
+}
+
+main .warning-admin-one {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 5px 7.5px 7.5px 7.5px;
+    font-size: 1.25em;
+    margin: 0 70px 0px 70px;
+}
+
+main .info-box {
+    background-color: #005a9c;
+    color: #fff;
+    font-size: 1.3em;
+    margin: 100px 50px 0px 50px;
+    padding: 15px;
+}
+
+main .info-box h2 {
+    text-align: center;
+}
+
+main .warning-admin-two {
+    background-color: #FFF4E8;
+    color: orange;
+    font-size: 1.1em;
+    position: absolute;
+    max-width: 100%;
+    margin: 0px 50px 0px 50px;
+    bottom: 2%;
+    padding: 5px 15px 10px 15px;
+}
+
+main .warning-admin-two h2 {
+    text-align: center;
+}

@@ -1,0 +1,263 @@
+
+p {
+    font-size: 150%;
+    font-family:'Times New Roman';
+    margin: 20px 0 0 25px;
+}
+
+.Accueil {
+    border: solid black;
+}
+
+.Avertissement {
+    color: #ff0000;
+    background-color: #FEB938;
+    text-align: center;
+    padding: 0.1px;
+    margin: 0 200px 0 200px;
+}
+
+h2 {
+    color: #005a9c;
+    margin: 0 0 0 100px;
+    font-size: 2em;
+}
+
+footer {
+    padding: 10px 25px 40px 25px;
+    background: #005a9c;
+    }
+    
+    .tablefooter {
+        margin: auto;
+        text-align: center;
+    }
+    
+    td { 
+        text-align: center;
+        vertical-align: middle;
+        color: yellowgreen;
+        padding: 10px 150px 0 150px;
+    }
+
+    th {
+        color: white;
+        font-size: 1.2em;
+    }
+
+.Accueil, .APropos, .Année2021-2022, .Année2022-2023, .Année2023-2024, .Emissions, 
+.LaLRS, .Notreéquipe, .PlanDuSite, .MentionsLégales, .EmissionStar, .NousContacter, .MisesàJour { margin: 50px;
+    border: solid black; }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+nav {
+
+    width: 100%;
+    margin: auto;
+    background-color: beige;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+.Accueil, .APropos, .Année2021-2022, .Année2022-2023, .Année2023-2024, .Emissions, 
+.LaLRS, .Notreéquipe, .PlanDuSite, .MentionsLégales, .EmissionStar, .NousContacter, .MisesàJour { margin: 50px;
+    border: solid black; }
+
+header {
+  border: #005a9c solid 2px;
+  background: #005a9c;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+.namepage {
+    background-color: #005a9c;
+    color: yellow;
+    text-align: center;
+    padding: 0.05px;
+    font-style: italic;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  font-family: serif;
+}
+
+nav {
+    background-color: beige;
+    padding: 1px;
+}
+
+.VersionSite {
+    font-size: 1em;
+    padding-left: 475px;
+    color: grey;
+    vertical-align: middle;
+    }
+
+    footer {
+        padding: 10px 25px 40px 25px;
+        background: #005a9c;
+        }
+        
+        .tablefooter {
+            margin: auto;
+            text-align: center;
+        }
+        
+        td { 
+            text-align: center;
+            vertical-align: middle;
+            color: yellowgreen;
+            padding: 10px 150px 0 150px;
+        }
+    
+        th {
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .AvertissementStyle {
+            color: #ff0000;
+            background-color: #FEB938;
+            text-align: center;
+            padding: 0.01px;
+            margin: 0 200px 0 200px;
+          font-family: 'times new roman'
+        }
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  font-family: 'Times New Roman';
+}
+
+
+nav {
+   text-align: center;
+}
+nav ul {
+   list-style: none;
+   margin:0;
+   padding:0;
+}
+nav ul li {
+   display:inline-block;
+   position: relative;
+}
+nav li li {
+   display: list-item;
+}
+nav ul ul, nav li:hover ul ul {
+   position:absolute;
+   left:-999em;
+   width:100%;
+}
+nav li:hover ul {
+   left:auto;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+nav a {
+   display:block;
+   padding:3px 30px;
+   background: beige;
+   color:#fff;
+   text-decoration: none;
+  color: black;
+}
+nav li li a {
+   padding:5px
+}
+nav li li:hover ul {
+   top:0;
+   left:100%
+ 
+}
+
+nav a:hover{
+    color: #005a9c;
+    border-bottom: 2px solid #005a9c;
+}
+
+nav ul li{
+    float: left;
+
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: beige;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: auto;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: #005a9c;
+    color: white;  
+}
+
+.under1 a:hover {
+  border-bottom: none;
+  background-color: #005a9c;
+  color: white;
+}
+
+.under1 a{
+    padding: 10px;
+    border-bottom: none;
+}
+
+.under1 {
+  box-shadow: 0px 1px 2px #CCC;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}

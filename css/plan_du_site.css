@@ -1,0 +1,64 @@
+.links, h2, .blinks {
+    color: #005a9c;
+}
+
+.links:visited {
+    color: #005a9c;
+}
+
+h3 {
+    color: #005a9c;
+    padding-left: 150px;
+}
+
+.YAller {
+    color: white;
+    text-decoration: none;
+    background-color: #005a9c;
+    font-size: 0.5em;
+    margin-left: 25px;
+    padding: 10px;
+    border: #005a9c;
+    border-radius: 10px;
+}
+
+.YAller:hover {
+    color: rgb(0, 91, 248);
+    text-decoration: underline;
+    background-color: rgba(0, 90, 156, 0.4);
+    font-size: 0.5em;
+    margin-left: 25px;
+    padding: 10px;
+    border: #005a9c;
+    border-radius: 20px;
+}
+
+.VousEIci {
+    color: orange;
+    text-decoration: none;
+    background-color: white;
+    font-size: 0.7em;
+    margin-left: 25px;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+
+.ImgEpingle {
+    color: orange;
+    height: 20px;
+    weight: 20px;
+}
+
+.icon_indispo {
+    padding: 5px 5px;
+    border-radius: 100px;
+    background-color: rgba(255, 0, 0, 0.9);
+    color: white;
+    font-size: 0.3em; 
+    cursor: help;
+}
+
+.indispo {
+    display: none;
+}
